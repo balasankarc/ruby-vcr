@@ -1,5 +1,5 @@
 ruby-vcr (2.8.0-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #695195).
 
  -- Miguel Landaeta <nomadium@debian.org>  Sun, 09 Mar 2014 17:59:29 -0300
