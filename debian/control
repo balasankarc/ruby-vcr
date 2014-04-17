@@ -28,5 +28,7 @@ Depends: ruby | ruby-interpreter,
          ${shlibs:Depends}
 Recommends: ruby-excon, ruby-faraday
 Suggests: ruby-fakeweb, ruby-typhoeus, ruby-webmock
-Description: Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
- VCR provides a simple API to record and replay your test suite's HTTP interactions.  It works with a variety of HTTP client libraries, HTTP stubbing libraries and testing frameworks.
+Description: Save the HTTP interactions test suites for later replay.
+ VCR provides a simple API to record and replay your test suite's HTTP
+ interactions.  It works with a variety of HTTP client libraries, HTTP stubbing
+ libraries and testing frameworks.
