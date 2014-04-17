@@ -3,9 +3,16 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Miguel Landaeta <nomadium@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.6.1~),
- ruby-rspec, ruby-typhoeus, ruby-httpclient, ruby-patron, ruby-em-http-request,
- ruby-curb, ruby-fakeweb, ruby-aruba
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb (>= 0.7.4~),
+               ruby-aruba,
+               ruby-curb,
+               ruby-em-http-request,
+               ruby-fakeweb,
+               ruby-httpclient,
+               ruby-patron,
+               ruby-rspec,
+               ruby-typhoeus
 Standards-Version: 3.9.5
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-vcr.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-vcr.git;a=summary
@@ -15,9 +22,11 @@ XS-Ruby-Versions: all
 Package: ruby-vcr
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter,
- ruby-multi-json
+Depends: ruby | ruby-interpreter,
+         ruby-multi-json,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Recommends: ruby-excon, ruby-faraday
-Suggests: ruby-webmock, ruby-fakeweb, ruby-typhoeus
+Suggests: ruby-fakeweb, ruby-typhoeus, ruby-webmock
 Description: Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
  VCR provides a simple API to record and replay your test suite's HTTP interactions.  It works with a variety of HTTP client libraries, HTTP stubbing libraries and testing frameworks.
