@@ -1,3 +1,16 @@
+## 2.9.0 (March 27, 2014)
+
+[Full Changelog](http://github.com/vcr/vcr/compare/v2.8.0...v2.9.0)
+
+Enhancements:
+
+* Update version checking to only assert that a given library is >=
+  a minimum version. (Ryan Foster)
+* Explicitly support the latest Excon release (0.32). (Ryan Foster)
+* Explicitly support the latest Excon release (0.31). (Michiel de Mare)
+* Explicitly support the latest Webmock releases (1.16, 1.17).
+  (Ryan Foster, Lawson Kurtz)
+
 ## 2.8.0 (November 23, 2013)
 
 [Full Changelog](http://github.com/vcr/vcr/compare/v2.7.0...v2.8.0)
