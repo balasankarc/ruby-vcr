@@ -12,7 +12,11 @@ Build-Depends: debhelper (>= 7.0.50~),
                ruby-httpclient,
                ruby-patron,
                ruby-rspec,
-               ruby-typhoeus
+               ruby-simplecov,
+               ruby-sinatra,
+               ruby-em-socksify,
+               ruby-typhoeus,
+               ruby-webmock
 Standards-Version: 3.9.5
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-vcr.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-vcr.git;a=summary
@@ -28,7 +32,7 @@ Depends: ruby | ruby-interpreter,
          ${shlibs:Depends}
 Recommends: ruby-excon, ruby-faraday
 Suggests: ruby-fakeweb, ruby-typhoeus, ruby-webmock
-Description: Save the HTTP interactions test suites for later replay.
+Description: Save the HTTP interactions test suites for later replay
  VCR provides a simple API to record and replay your test suite's HTTP
  interactions.  It works with a variety of HTTP client libraries, HTTP stubbing
  libraries and testing frameworks.
