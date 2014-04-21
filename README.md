@@ -82,6 +82,8 @@ The docs come in two flavors:
 See the [Upgrade](https://github.com/vcr/vcr/blob/master/Upgrade.md) doc
 for info about what's new and changed in VCR 2.0.
 
+There is also a Railscast, which will get you up and running in no-time http://railscasts.com/episodes/291-testing-with-vcr
+
 ## Release Policy
 
 VCR follows the principles of [semantic versioning](http://semver.org/).
@@ -115,7 +117,7 @@ Note that as of VCR 2, 1.8.6 and 1.9.1 are not supported.
 * See the [Contributing](https://github.com/vcr/vcr/blob/master/CONTRIBUTING.md)
   guide for instructions on running the specs and features.
 * Code quality metrics are checked by [Code Climate](https://codeclimate.com/github/vcr/vcr).
-* Documentation is generated with [YARD](http://yardoc.org/) ([cheat sheet](http://cheat.errtheblog.com/s/yard/)).
+* Documentation is generated with [YARD](http://yardoc.org/) ([cheat sheet](http://cheat.errtheblog.com/s/yard)).
   To generate while developing:
 
 ```
@@ -173,6 +175,7 @@ Thanks also to the following people who have contributed patches or helpful sugg
 * [Mark Burns](https://github.com/markburns)
 * [Max Riveiro](https://github.com/kavu)
 * [Michael Lavrisha](https://github.com/vrish88)
+* [Michiel de Mare](https://github.com/mdemare)
 * [Mike Dalton](https://github.com/kcdragon)
 * [Mislav Marohnić](https://github.com/mislav)
 * [Nathaniel Bibler](https://github.com/nbibler)
@@ -201,12 +204,16 @@ Thanks also to the following people who have contributed patches or helpful sugg
 
 * [Betamax](https://github.com/robfletcher/betamax) (Groovy/JVM)
 * [Betamax](https://github.com/sigmavirus24/betamax) (Python)
+* [Betamax](https://github.com/thegreatape/betamax) (Go)
+* [Betamax](https://github.com/wjlroe/betamax) (Clojure)
+* [Betamax.NET](https://github.com/mfloryan/Betamax.Net) (C#/.NET)
 * [ExVCR](https://github.com/parroty/exvcr) (Elixir)
 * [HAVCR](https://github.com/cordawyn/havcr) (Haskell)
 * [Mimic](https://github.com/acoulton/mimic) (PHP/Kohana)
 * [Nock-VCR](https://github.com/carbonfive/nock-vcr) (JavaScript/Node)
 * [NSURLConnectionVCR](https://bitbucket.org/martijnthe/nsurlconnectionvcr) (Objective-C)
 * [PHP-VCR](https://github.com/php-vcr/php-vcr) (PHP)
+* [Sepia](https://github.com/linkedin/sepia) (Javascript/Node)
 * [TapeDeck.js](https://github.com/EndangeredMassa/TapeDeck.js) (JavaScript)
 * [VCR.js](https://github.com/elcuervo/vcr.js) (JavaScript)
 * [VCR.py](https://github.com/kevin1024/vcrpy) (Python)
@@ -220,11 +227,11 @@ Thanks also to the following people who have contributed patches or helpful sugg
 * [Net::HTTP Spy](http://github.com/martinbtt/net-http-spy)
 * [NetRecorder](https://github.com/chrisyoung/netrecorder)
 * [Puffing Billy](https://github.com/oesmith/puffing-billy)
-* [REST-assured](https://github.com/BBC/REST-assured)
+* [REST-assured](https://github.com/artemave/REST-assured)
 * [Stale Fish](https://github.com/jsmestad/stale_fish)
 * [WebFixtures](http://github.com/trydionel/web_fixtures)
 
 ## Copyright
 
-Copyright (c) 2010-2013 Myron Marston. Released under the terms of the
+Copyright (c) 2010-2014 Myron Marston. Released under the terms of the
 MIT license. See LICENSE for details.

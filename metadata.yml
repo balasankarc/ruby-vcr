@@ -1,14 +1,14 @@
 --- !ruby/object:Gem::Specification
 name: vcr
 version: !ruby/object:Gem::Version
-  version: 2.8.0
+  version: 2.9.0
 platform: ruby
 authors:
 - Myron Marston
 autorequire: 
 bindir: bin
 cert_chain: []
-date: 2013-11-24 00:00:00.000000000 Z
+date: 2014-03-27 00:00:00.000000000 Z
 dependencies: []
 description: VCR provides a simple API to record and replay your test suite's HTTP
   interactions.  It works with a variety of HTTP client libraries, HTTP stubbing libraries
