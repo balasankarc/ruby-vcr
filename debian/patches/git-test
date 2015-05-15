@@ -1,0 +1,35 @@
+Description: Disable git based tests
+ Disable the tests that assume that the source uses a git based structure.
+Last-Update: 2015-05-15
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/spec/quality_spec.rb
++++ b/spec/quality_spec.rb
+@@ -36,16 +36,16 @@
+     end
+   end
+ 
+-  it "has no malformed whitespace" do
+-    error_messages = []
+-    Dir.chdir(File.expand_path("../..", __FILE__)) do
+-      `git ls-files`.split("\n").each do |filename|
+-        next if filename =~ /vendor|.feature|.yml|.gitmodules/
+-        error_messages << check_for_tab_characters(filename)
+-        error_messages << check_for_extra_spaces(filename)
+-      end
+-    end
+-    expect(error_messages.compact).to be_well_formed
+-  end
++#  it "has no malformed whitespace" do
++    #error_messages = []
++    #Dir.chdir(File.expand_path("../..", __FILE__)) do
++      #`git ls-files`.split("\n").each do |filename|
++        #next if filename =~ /vendor|.feature|.yml|.gitmodules/
++        #error_messages << check_for_tab_characters(filename)
++        #error_messages << check_for_extra_spaces(filename)
++      #end
++    #end
++    #expect(error_messages.compact).to be_well_formed
++  #end
+ end
+ 
