@@ -1,5 +1,5 @@
-ruby-vcr (2.9.0-1) UNRELEASED; urgency=low
+ruby-vcr (2.9.0-1) experimental; urgency=medium
 
-  * Initial release (Closes: #695195).
+  * Initial release (Closes: #695195)
 
- -- Sebastien Badia <seb@sebian.fr>  Mon, 21 Apr 2014 03:00:37 +0200
+ -- Balasankar C <balasankarc@autistici.org>  Tue, 05 May 2015 21:57:54 +0530

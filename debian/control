@@ -2,37 +2,33 @@ Source: ruby-vcr
 Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
-Uploaders: Miguel Landaeta <nomadium@debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
 Build-Depends: debhelper (>= 7.0.50~),
-               gem2deb (>= 0.7.4~),
-               ruby-aruba,
+               gem2deb,
+               rake,
                ruby-curb,
                ruby-em-http-request,
+               ruby-excon,
                ruby-fakeweb,
+               ruby-faraday,
                ruby-httpclient,
                ruby-patron,
-               ruby-rspec,
-               ruby-simplecov,
+               ruby-rspec (>= 3.0.0),
                ruby-sinatra,
-               ruby-em-socksify,
                ruby-typhoeus,
                ruby-webmock
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-vcr.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-vcr.git;a=summary
 Homepage: https://github.com/vcr/vcr
+Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
 Package: ruby-vcr
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
-         ruby-multi-json,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Recommends: ruby-excon, ruby-faraday
-Suggests: ruby-fakeweb, ruby-typhoeus, ruby-webmock
-Description: Save the HTTP interactions test suites for later replay
- VCR provides a simple API to record and replay your test suite's HTTP
- interactions.  It works with a variety of HTTP client libraries, HTTP stubbing
- libraries and testing frameworks.
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
+Description: Simple API to record and replay test suite's HTTP interatcions
+ Record your test suite's HTTP interactions and replay them during future test
+ runs for fast, deterministic, accurate tests. It works with a variety of HTTP
+ client libraries, HTTP stubbing libraries and testing frameworks.
