@@ -6,14 +6,12 @@
 #
 # Uncomment to ignore some test failures (but the tests will run anyway).
 # Valid values:
-#export DH_RUBY_IGNORE_TESTS=ruby1.9.1 ruby2.0 require-rubygems
+#export DH_RUBY_IGNORE_TESTS=ruby2.1 require-rubygems
 #
 # If you need to specify the .gemspec (eg there is more than one)
 #export DH_RUBY_GEMSPEC=gem.gemspec
 
 %:
 	dh $@ --buildsystem=ruby --with ruby
-
-override_dh_auto_clean:
-	dh_auto_clean
-	-rm -rf coverage/
+override_dh_installchangelogs:
+		dh_installchangelogs CHANGELOG.md
