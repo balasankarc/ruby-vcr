@@ -1,3 +1,28 @@
+## 2.9.3 (September 7, 2014)
+[Full Changelog](http://github.com/vcr/vcr/compare/v2.9.2...v2.9.3)
+
+Bug Fixes:
+
+* Fix `VCR::Cassette#serializable_hash` so that it does not allow
+  `before_record` hooks to apply mutations to existing HTTPInteraction
+  instances. (Myron Marston)
+
+## 2.9.2 (May 27, 2014)
+[Full Changelog](http://github.com/vcr/vcr/compare/v2.9.1...v2.9.2)
+
+Bug Fixes:
+
+* Fix RSpec metadata integration once more -- we changed it a bit more
+  in response to user feedback. (Myron Marston)
+
+## 2.9.1 (May 23, 2014)
+[Full Changelog](http://github.com/vcr/vcr/compare/v2.9.0...v2.9.1)
+
+Bug Fixes:
+
+* Fix RSpec metadata integration to not trigger deprecation warnings
+  with RSpec 3.0.0.rc1+. (Janko Marohnić)
+
 ## 2.9.0 (March 27, 2014)
 
 [Full Changelog](http://github.com/vcr/vcr/compare/v2.8.0...v2.9.0)

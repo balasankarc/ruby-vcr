@@ -9,8 +9,13 @@ module VCR
         ::RSpec.configure do |config|
           vcr_cassette_name_for = lambda do |metadata|
             description = metadata[:description]
+            example_group = if metadata.key?(:example_group)
+                              metadata[:example_group]
+                            else
+                              metadata[:parent_example_group]
+                            end
 
-            if example_group = metadata[:example_group]
+            if example_group
               [vcr_cassette_name_for[example_group], description].join('/')
             else
               description
