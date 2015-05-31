@@ -2,7 +2,7 @@
 
 Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
 
-[![Build Status](https://secure.travis-ci.org/vcr/vcr.png?branch=master)](http://travis-ci.org/vcr/vcr) [![Code Climate](https://codeclimate.com/github/vcr/vcr.png)](https://codeclimate.com/github/vcr/vcr)
+[![Gem Version](https://img.shields.io/gem/v/vcr.svg)](http://rubygems.org/gems/vcr) [![Build Status](https://img.shields.io/travis/vcr/vcr/master.svg)](https://travis-ci.org/vcr/vcr) [![Code Climate](https://img.shields.io/codeclimate/github/vcr/vcr.svg)](https://codeclimate.com/github/vcr/vcr)
 
 ## Synopsis
 
@@ -38,7 +38,7 @@ maintenance) and accurate (the response will contain the same headers and body y
   following are supported:
   * [WebMock](https://github.com/bblimke/webmock)
   * [Typhoeus](https://github.com/typhoeus/typhoeus)
-  * [Faraday](https://github.com/technoweenie/faraday)
+  * [Faraday](https://github.com/lostisland/faraday)
   * [Excon](https://github.com/geemus/excon)
   * [FakeWeb](https://github.com/chrisk/fakeweb) (deprecated)
 * Supports multiple HTTP libraries:
@@ -49,9 +49,9 @@ maintenance) and accurate (the response will contain the same headers and body y
   * [Net::HTTP](http://www.ruby-doc.org/stdlib/libdoc/net/http/rdoc/index.html) (when using FakeWeb and WebMock)
   * [Typhoeus](https://github.com/typhoeus/typhoeus) (Typhoeus::Hydra, but not Typhoeus::Easy or Typhoeus::Multi)
   * [Excon](https://github.com/geemus/excon)
-  * [Faraday](https://github.com/technoweenie/faraday)
-  * And of course any library built on Net::HTTP, such as [Mechanize](http://github.com/tenderlove/mechanize),
-    [HTTParty](http://github.com/jnunemaker/httparty) or [Rest Client](http://github.com/archiloque/rest-client).
+  * [Faraday](https://github.com/lostisland/faraday)
+  * And of course any library built on Net::HTTP, such as [Mechanize](http://github.com/sparklemotion/mechanize),
+    [HTTParty](http://github.com/jnunemaker/httparty) or [Rest Client](http://github.com/rest-client/rest-client).
 * Request matching is configurable based on HTTP method, URI, host, path, body and headers, or you can easily
   implement a custom request matcher to handle any need.
 * The same request can receive different responses in different tests--just use different cassettes.
@@ -161,6 +161,7 @@ Thanks also to the following people who have contributed patches or helpful sugg
 * [Herman Verschooten](https://github.com/Hermanverschooten)
 * [Ian Cordasco](https://github.com/sigmavirus24)
 * [Ingemar](https://github.com/ingemar)
+* [Ilya Scharrenbroich](https://github.com/quidproquo)
 * [Jacob Green](https://github.com/Jacobkg)
 * [James Bence](https://github.com/jbence)
 * [Jay Shepherd](https://github.com/jayshepherd)
@@ -220,6 +221,11 @@ Thanks also to the following people who have contributed patches or helpful sugg
 * [VCRURLConnection](https://github.com/dstnbrkr/VCRURLConnection) (Objective-C)
 * [vcr-clj](https://github.com/ifesdjeen/vcr-clj) (Clojure)
 * [VHS](https://github.com/diegoeche/vhs) (Erlang)
+
+## Related Projects
+
+* [Mr. Video](https://github.com/quidproquo/mr_video) (Rails engine for managing VCR cassettes and episodes)
+
 
 ## Similar Libraries in Ruby
 
