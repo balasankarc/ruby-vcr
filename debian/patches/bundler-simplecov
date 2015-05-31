@@ -1,11 +1,13 @@
-Description: Remove coverall dependency
- Remove usage of coveralls
-Last-Update: 2015-05-15
+Description: Disable bundler and simplecov
+ Disable the use of bundler as well as simplecov while running the tests
+Author: Balasankar C <balasankarc@autistici.org>
+Forwarded: not-needed
+Last-Update: 2015-05-31
 ---
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/spec/spec_helper.rb
 +++ b/spec/spec_helper.rb
-@@ -1,30 +1,5 @@
+@@ -1,29 +1,5 @@
  require 'rubygems'
  
 -using_git = File.exist?(File.expand_path('../../.git/', __FILE__))
@@ -32,7 +34,6 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 -    SimpleCov.result.format!
 -  end
 -end
--
- require 'rspec'
  
  require "support/fixnum_extension"
+ require "support/limited_uri"

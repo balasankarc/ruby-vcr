@@ -1,5 +1,5 @@
-ruby-vcr (2.9.0-1) experimental; urgency=medium
+ruby-vcr (2.9.3-1) experimental; urgency=medium
 
   * Initial release (Closes: #695195)
 
- -- Balasankar C <balasankarc@autistici.org>  Tue, 05 May 2015 21:57:54 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Sun, 31 May 2015 10:08:13 +0530

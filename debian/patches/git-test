@@ -1,5 +1,7 @@
 Description: Disable git based tests
  Disable the tests that assume that the source uses a git based structure.
+Author: Balasankar C <balasankarc@autistici.org>
+Forwarded: not-needed
 Last-Update: 2015-05-15
 ---
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
