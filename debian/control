@@ -28,7 +28,7 @@ Package: ruby-vcr
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
-Description: Simple API to record and replay test suite's HTTP interatcions
+Description: record and replay test suite's HTTP interatcions
  Record your test suite's HTTP interactions and replay them during future test
  runs for fast, deterministic, accurate tests. It works with a variety of HTTP
  client libraries, HTTP stubbing libraries and testing frameworks.
