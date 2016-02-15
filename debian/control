@@ -18,8 +18,8 @@ Build-Depends: debhelper (>= 9~),
                ruby-typhoeus,
                ruby-webmock
 Standards-Version: 3.9.6
-Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-vcr.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-vcr.git;a=summary
+Vcs-Git: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-vcr.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-vcr.git;a=summary
 Homepage: https://github.com/vcr/vcr
 Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
